@@ -8,12 +8,6 @@ def clean(i):
         return n_list
     elif isinstance(i,dict):
         n_dict = {}
-        for y,z in i.items():
-            cl_y = clean(y)
-            cl_z = clean(z)
-            if cl_y and cl_z:
-                n_dict[cl_y]=cl_z
-        return n_dict
     if not i:
         return None
     return i
