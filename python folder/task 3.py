@@ -3,7 +3,7 @@ def i_time(fun):
     def wrapper(*args,**kwargs):
         start=time.time()
         result = fun(*args,**kwargs)
-        print(f'Time:{time.time()-start}')
+        print(time.time()-start)
         return result
     return wrapper
 @i_time
